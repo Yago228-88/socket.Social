@@ -1,0 +1,269 @@
+body {background-image: linear-gradient(to right, #E005FA, #FFB700);}
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.back{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#000;
+	position:relative;
+}
+
+nav > ul li {
+	display:table-cell;
+}
+
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#c5e6fd;
+}
+
+nav > ul > li > a span {
+	background:#8bb7f4;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+	text-transform:uppercase;
+	background:#C139F9;
+}
+
+nav ul li a .segundo {
+	background:#8307B6;
+}
+
+nav ul li a .tercero {
+	background:#C139F9;
+}
+
+nav ul li a .cuarto {
+	background:#8307B6;
+}
+
+nav ul li a .quinto {
+  
+	background:#00000000;
+}
+
+h2{ font-size: 48px; margin-bottom: 30px; }
+section{
+	padding: 120px 0;
+}
+.bg-light-grey{
+	background-color: #f5f5f5;
+}
+.bg-dark{
+	background-color: #090b25 !important;
+}
+p{
+	z-index: 1;
+	font-size: 18px;
+	color: #999999;
+	line-height: 1.8;
+	margin-bottom: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+.topmargin-xs{ margin-top: 15px !important;}
+.topmargin-sm{ margin-top: 30px !important; }
+.topmargin-lg{ margin-top: 100px !important;}
+
+
+.form-control{
+	font-size: 14px;
+	border: 1px solid #cacaca;
+	padding: 15px;
+	border-radius: 2px;
+	height: auto;
+}
+.form-control:focus{
+	border: 1px solid #1a1a1a;
+	outline: none;
+	box-shadow: none;
+}
+#footer{
+	padding: 80px;
+	text-align: center;
+	color: #ffffff;
+}
+#footer .list-inline-item{
+	padding: 10px 15px;
+}
+
+.navbar{
+	z-index: 2;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0,.05);
+	min-height: 100px;
+}
+.nav-link{ color: #1a1a1a; }
+.nav-link: hover{ color: #1a1a1a; }
+/*.logo-brand{
+	min-height: 160px;
+	min-width: 180px;
+}*/
+.logo-brand{
+	min-width: 160;
+	max-width: 180;
+}
+.navbar-toggler{
+	font-size: 40px;
+}
+.navbar-toggler:focus{ outline: none; }
+#hero{
+	background-image: url(univ.png);
+	background-size: cover;
+	padding-top: 90px;
+	min-height: 700px;
+	color: #EF6C00  ;
+}
+#hero p{
+	color: #37474F ;
+}
+.content-center{
+	max-width: 800px;
+	margin: 0 auto 60px auto;
+	text-align: center;
+}
+.portfolio-container{
+	z-index: 1;
+	position: relaive;
+	overflow: hidden;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+.portfolio-container img{
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.portfolio-container:hover img{
+	-moz-transform: scale(1.2) ;
+	-webkit-transform:scale(1.2);
+	transform: scale(1.2);
+}
+.portfolio-details{
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	z-index: 9000;
+}
+.portfolio-details a h2, .portfolio-details a p{
+	color: #ffffff;
+}
+.portfolio-details h2{
+	margin-bottom: 0px;
+}
+.parrafo img{
+	
+	width: 75%;
+	float: left;
+	margin-right: 15px;}
+
+/* para ajustar las pantallas */
+@media (max-width: 575.98px) { 
+
+	.portfolio-details h2{ font-size: 32px; }
+ }
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.portfolio-details h2{
+		font-size: 30px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 1200px) { ... }
